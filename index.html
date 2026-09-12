@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday, Chloe 🏹</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======= PRELOADER ======= -->
+<div id="preloader">
+  <div class="target-loader">
+    <div class="ring ring-3"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-1"></div>
+    <div class="bullseye"></div>
+    <div class="arrow-loader"></div>
+  </div>
+  <p class="loader-text">loading the celebration…</p>
+</div>
+
+<!-- ======= PARALLAX BACKGROUND FIGURES ======= -->
+<div id="parallax-layer" aria-hidden="true">
+  <svg class="silhouette figure-archer" data-speed="0.15" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M60 20c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zm0 30c-6 0-11 20-11 20l-18 30 8 6 16-26 5 60h12l5-60 16 26 8-6-18-30s-5-20-11-20h-12zm-30 8l-20 10v14h8v-10l12-6-0-8zm40-2l24 8-4 12-20-6 0-14z" />
+  </svg>
+  <svg class="silhouette figure-hiker" data-speed="0.25" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M55 18a13 13 0 1 1 0 26 13 13 0 0 1 0-26zm-4 30h14l10 8-6 34-14-4 4-24-8-6-8 30-14-4 12-34zm26 4l16 6-6 40-12-2 4-30-6-2z"/>
+  </svg>
+  <svg class="silhouette figure-photog" data-speed="0.35" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M58 20a12 12 0 1 1 0 24 12 12 0 0 1 0-24zm-16 30h34l6 10-10 6v46h-26v-46l-10-6zm-2 8l-14 20 8 6 12-18zm40 0l14 6-6 22-10-4z"/>
+    <rect x="46" y="52" width="24" height="16" rx="2"/>
+  </svg>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">Chloe<span class="dot">.</span>18</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#about">the person</a></li>
+        <li class="nav-item"><a class="nav-link" href="#xmen">angel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#music">sound</a></li>
+        <li class="nav-item"><a class="nav-link" href="#server">server</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appreciate">loofy</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ======= HERO ======= -->
+<header id="hero" class="hero-section">
+  <div class="container hero-grid">
+
+    <div class="hero-copy">
+      <p class="kicker">18 laps around the sun</p>
+      <h1 class="hero-title">Happy Birthday,<br><span class="gradient-text">Chloe</span></h1>
+      <p class="hero-sub">Photographer. Volunteer. Wanderer. Archer chasing a Olympic ring. Whip in one hand, camera in the other — somehow all one person.</p>
+      <a href="#about" class="btn-neu">scroll to find out why <i class="bi bi-arrow-down-short"></i></a>
+    </div>
+
+    <div class="hero-visual">
+      <!-- 3D tilt card -->
+      <div class="tilt-wrap" id="tiltCard">
+        <div class="tilt-card">
+          <div class="tilt-layer layer-back"></div>
+          <div class="tilt-layer layer-wings">
+            <svg viewBox="0 0 300 300" class="wings-svg">
+              <path class="wing wing-left" d="M150 150C110 120 40 110 15 60c40-5 95 5 125 45 5 10 8 30 10 45z"/>
+              <path class="wing wing-right" d="M150 150c40-30 110-40 135-90-40-5-95 5-125 45-5 10-8 30-10 45z"/>
+            </svg>
+          </div>
+          <div class="tilt-layer layer-avatar">
+            <div class="avatar-ring">
+              <img src="image/pfp.png" class="avatar-img" id="chloeAvatar">
+              <span class="status-dot"></span>
+            </div>
+          </div>
+          <div class="tilt-layer layer-shine"></div>
+        </div>
+
+        <!-- Discord-style pop out profile -->
+        <button class="discord-trigger" id="discordTrigger" aria-label="View profile">
+          <i class="bi bi-discord"></i>
+        </button>
+        <div class="discord-popcard" id="discordCard">
+          <div class="dc-banner"></div>
+          <div class="dc-body">
+            <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Chloe&backgroundColor=1a1d29,20242f&shapeColor=e8b84b,ff6f9c,49c5b6" class="dc-avatar" alt="">
+            <h4 class="dc-name">Chloe <i class="bi bi-patch-check-fill dc-verify"></i></h4>
+            <p class="dc-tag">@chloe · online</p>
+            <div class="dc-roles">
+              <span class="dc-role r1">photographer</span>
+              <span class="dc-role r2">volunteer</span>
+              <span class="dc-role r3">archer</span>
+              <span class="dc-role r4">whip cracker</span>
+              <span class="dc-role r5">future olympian</span>
+            </div>
+            <p class="dc-note">"aiming for the Olympic ring, one arrow at a time 🏹"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-cue"><span></span></div>
+</header>
+
+<!-- ======= ABOUT / INTERESTS ======= -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-kicker">who she is, off-screen</p>
+    <h2 class="section-title">One person, six obsessions</h2>
+
+    <div class="interest-grid">
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-camera-fill"></i></div>
+        <h3>Photography</h3>
+        <p>Sees a frame before everyone else notices there was a photo to take.</p>
+      </div>
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+        <h3>Volunteering</h3>
+        <p>Shows up for people without needing to be asked twice.</p>
+      </div>
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-airplane-fill"></i></div>
+        <h3>Travelling</h3>
+        <p>Collects places the way other people collect playlists.</p>
+      </div>
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-bullseye"></i></div>
+        <h3>Archery</h3>
+        <p>Bow up, breath out, arrow gone. Training for something bigger than a range.</p>
+      </div>
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+        <h3>Whip Cracking</h3>
+        <p>Yes, an actual whip. No, she will not explain why it's this cool.</p>
+      </div>
+
+      <div class="neu-card tilt-hover">
+        <div class="neu-icon"><i class="bi bi-award-fill"></i></div>
+        <h3>Shooting — Olympic Bound</h3>
+        <p>Not a hobby. A plan. The Olympics are the goal, not a daydream.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= ARCHERY / OLYMPIC TARGET MOMENT ======= -->
+<section class="section target-section">
+  <div class="container text-center">
+    <p class="section-kicker">the goal</p>
+    <h2 class="section-title">Every arrow is practice for the Games</h2>
+    <div class="archery-stage" id="archeryStage">
+      <svg viewBox="0 0 300 300" class="target-svg">
+        <circle cx="150" cy="150" r="140" class="ring ring-a" />
+        <circle cx="150" cy="150" r="108" class="ring ring-b" />
+        <circle cx="150" cy="150" r="76" class="ring ring-c" />
+        <circle cx="150" cy="150" r="44" class="ring ring-d" />
+        <circle cx="150" cy="150" r="14" class="ring ring-gold" />
+      </svg>
+      <svg class="arrow-svg" id="arrowSvg" viewBox="0 0 300 300">
+        <line x1="0" y1="150" x2="150" y2="150" />
+        <polygon points="150,143 168,150 150,157" />
+      </svg>
+    </div>
+    <p class="target-caption">Paris didn't happen yet. Los Angeles is watching.</p>
+  </div>
+</section>
+
+<!-- ======= X-MEN / ANGEL SALVADORE ======= -->
+<section id="xmen" class="section xmen-section">
+  <div class="container xmen-grid">
+    <div class="xmen-visual">
+      <div class="wing-stage">
+        <svg viewBox="0 0 400 400" class="big-wings">
+          <path class="bwing bwing-l" d="M200 210C130 170 40 150 5 80c60-10 150 5 195 65 8 15 12 45 0 65z"/>
+          <path class="bwing bwing-r" d="M200 210c70-40 160-60 195-130-60-10-150 5-195 65-8 15-12 45 0 65z"/>
+        </svg>
+        <div class="xmen-badge">
+          <i class="bi bi-shield-fill-check"></i>
+        </div>
+      </div>
+    </div>
+    <div class="xmen-copy">
+      <p class="section-kicker">favorite film · favorite character</p>
+      <h2 class="section-title">X-Men: First Class <span class="gradient-text-pink">— Angel Salvadore</span></h2>
+      <p class="hero-sub">Out of the whole roster, she picked the one who could fly, breathe fire, and never once apologized for taking up space. Fitting, honestly.</p>
+      <div class="quote-neu">
+        "Wings you weren't born expecting to need — and you learn to fly anyway."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= MUSIC ======= -->
+<section id="music" class="section music-section">
+  <div class="container music-grid">
+    <div class="vinyl-wrap">
+      <div class="vinyl" id="vinyl">
+        <div class="vinyl-label">OR</div>
+      </div>
+      <div class="tonearm"></div>
+    </div>
+    <div>
+      <p class="section-kicker">on repeat</p>
+      <h2 class="section-title">Olivia Rodrigo, obviously</h2>
+      <p class="hero-sub">The soundtrack to every trip, every training session, every 2am voice call in the server. Guts and Sour, on loop, no skips.</p>
+      <div class="music-tags">
+        <span>drivers license</span>
+        <span>good 4 u</span>
+        <span>vampire</span>
+        <span>get him back!</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= DISCORD SERVER ======= -->
+<section id="server" class="section server-section">
+  <div class="container">
+    <p class="section-kicker">where we all actually met</p>
+    <h2 class="section-title">Her server is the whole reason this exists</h2>
+    <div class="server-card neu-card">
+      <div class="server-card-top">
+        <div class="server-icon"><i class="bi bi-discord"></i></div>
+        <div>
+          <h4>Chloe's Hangout</h4>
+          <p class="text-dim"><span class="pulse-dot"></span> members online now</p>
+        </div>
+      </div>
+      <p class="hero-sub">A server that started as "just a place to talk" and turned into the reason half of us know each other at all — including her and Loofy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= APPRECIATION CARD (not a love card) ======= -->
+<section id="appreciate" class="section appreciate-section">
+  <div class="container text-center">
+    <p class="section-kicker">a card, not <em>that</em> kind of card</p>
+    <h2 class="section-title">For being genuinely great to Loofy</h2>
+    <p class="hero-sub mx-auto" style="max-width:560px">This one isn't from a boyfriend. It's from the guy who just gets to watch from the side and be glad his best friend picked well.</p>
+
+    <div class="appreciate-card-wrap">
+      <div class="appreciate-card" id="appreciateCard">
+        <div class="ac-icon"><i class="bi bi-hand-thumbs-up-fill"></i></div>
+        <h3>Respect, not romance.</h3>
+        <p>You show up for him, you make him better, and you never once made this weird for the rest of us. That's rare. Cheers to that — and happy birthday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer-section">
+  <div class="container text-center">
+    <p class="footer-title">Happy 18th, Chloe.</p>
+    <p class="text-dim">Built by the guy who's basically your brother-in-server. Go touch some grass, then come back and hit a bullseye.</p>
+  </div>
+</footer>
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
